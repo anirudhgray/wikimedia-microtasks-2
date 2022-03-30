@@ -110,9 +110,12 @@ select,
   grid-area: select;
 }
 
-.error-div {
+.error-div, .success-div {
   background-color: rgb(255, 172, 172);
   border-radius: 0.3rem;
   padding: 0.5rem;
   margin-top: 1rem;
+}
+.success-div {
+  background-color: rgb(122, 185, 122);
 }
