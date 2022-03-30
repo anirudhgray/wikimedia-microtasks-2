@@ -1,0 +1,118 @@
+html,
+body {
+  height: 100%;
+}
+p {
+  margin: 0;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+  --select-border: #777;
+  --select-focus: blue;
+  --select-arrow: var(--select-border);
+}
+
+.container {
+  height: 100%;
+  display: flex;
+}
+
+.mx-auto {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.my-auto {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.form {
+  max-width: 300px;
+  max-width: 80%;
+  background-color: white;
+  box-shadow: 0rem 0.1rem 0.2rem 0.01rem grey;
+  border-radius: 0.3rem;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.field-title {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: black;
+}
+
+.field-desc {
+  color: grey;
+  margin-bottom: 0.5rem;
+}
+
+input {
+  width: 100%;
+}
+
+.inputs {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.8rem;
+}
+
+select {
+  /* A reset of styles, including removing the default dropdown arrow */
+  appearance: none;
+  /* Additional resets for further consistency */
+  background-color: transparent;
+  border: none;
+  padding: 0 1em 0 0;
+  margin: 0;
+  width: 100%;
+  font-family: inherit;
+  font-size: inherit;
+  cursor: inherit;
+  line-height: inherit;
+  outline: none;
+}
+
+.select {
+  width: 20%;
+  border: 1px solid var(--select-border);
+  border-radius: 0.25em;
+  padding: 0.17em;
+  font-size: 1rem;
+  cursor: pointer;
+  line-height: 1;
+  background-color: #fff;
+  background-image: linear-gradient(to top, #f9f9f9, #fff 33%);
+  display: grid;
+  grid-template-areas: "select";
+  align-items: center;
+}
+
+.select::after {
+  content: "";
+  width: 0.8em;
+  height: 0.5em;
+  background-color: var(--select-arrow);
+  clip-path: polygon(100% 0%, 0 0%, 50% 100%);
+  justify-self: end;
+}
+
+select,
+.select:after {
+  grid-area: select;
+}
+
+.error-div {
+  background-color: rgb(255, 172, 172);
+  border-radius: 0.3rem;
+  padding: 0.5rem;
+  margin-top: 1rem;
+}
