@@ -4,3 +4,9 @@
 For this task I created a basic Source Field for a form using plain HTML, CSS and jQuery (no CSS or UI libraries were used!).
 
 As a bonus, this form can be used to query and test my [Microtask 4 (URL Validation)](https://github.com/anirudhgray/wikimedia-microtask-4) submission.
+
+## Screenshots
+
+![1](images/microtask2-1.jpg)
+![2](images/microtask2-2.jpg)
+![3](images/microtask2-3.jpg)

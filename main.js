@@ -8,6 +8,7 @@ $( ".form" ).on( "submit", function( event ) {
     body: JSON.stringify({url: $("#inputurl").val()})
   })
   .then(res => {
+    $("#inputurl").val("")
     if(!res.ok) {
       return res.json().then(err => { 
         $( ".result" ).html( `<div class="error-div">
@@ -24,6 +25,7 @@ $( ".form" ).on( "submit", function( event ) {
    }    
   })
   .catch(err => {
-     console.log(err);
+    $("#inputurl").val("")
+    console.log(err);
   });
 });
