@@ -1,5 +1,8 @@
-$('.form').on('submit', function (event) {
+$('.form').on('submit', (event) => {
   event.preventDefault();
+  $('.result').html(`<div class="loading-div">
+        <p>Loading...</p>
+      </div>`);
   if ($('#type').val() === 'url') {
     fetch('https://wikimedia-url-validation.herokuapp.com/', {
       method: 'POST',
@@ -34,5 +37,15 @@ $('.form').on('submit', function (event) {
     $('.result').html(`<div class="blue-div">
         <p>Hm, you entered an ISBN code.</p>
       </div>`);
+  }
+});
+
+themeToggle = document.querySelector('.theme-toggle');
+body = document.querySelector('body');
+themeToggle.addEventListener('click', () => {
+  if (body.className === 'light') {
+    body.className = 'dark';
+  } else {
+    body.className = 'light';
   }
 });

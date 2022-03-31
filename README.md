@@ -3,7 +3,7 @@
 
 For this task I created a basic Source Field for a form using plain HTML, CSS and jQuery (no CSS or UI libraries were used!).
 
-As a bonus, this form can be used to query and test my [Microtask 4 (URL Validation)](https://github.com/anirudhgray/wikimedia-microtask-4) submission.
+As a bonus, this form can be used to query and test my [Microtask 4 (URL Validation)](https://github.com/anirudhgray/wikimedia-microtask-4) submission. Note: the url validation python server is hosted on Heroku, which sleeps after inactivity. So the first request you make might take some time to respond.
 
 ## Screenshots
 

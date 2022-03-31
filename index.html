@@ -9,14 +9,15 @@
   <link href="style.css" rel="stylesheet">
 </head>
 
-<body>
+<body class="dark">
   <div class="container">
     <form class="my-auto mx-auto form">
+      <button type="button" class="theme-toggle">Toggle Theme</button>
       <p for="inputurl" class="field-title">Source for Edit Request</p>
       <p class="field-desc">A source can be a website, a book, a newspaper article, a scientific journal article, etc.
       </p>
       <div class="inputs">
-        <input required id="inputurl" name="inputurl" placeholder="Enter Source">
+        <input required id="inputurl" name="url" placeholder="Enter Source">
         <div class="select">
           <select name="type" id="type">
             <option value="url">URL</option>
@@ -24,7 +25,7 @@
           </select>
         </div>
       </div>
-      <button type="submit">Submit</button>
+      <button class="mx-auto submit-button" type="submit">Submit</button>
       <div class="result"></div>
     </form>
   </div>
